@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexaro - Wear the Future</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-5 border-b border-gray-800 sticky top-0 bg-black z-50">
+    <h1 class="text-2xl font-bold text-yellow-400">NEXARO</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#" class="hover:text-yellow-400">Home</a>
+      <a href="#shop" class="hover:text-yellow-400">Shop</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center py-24 px-4">
+    <h2 class="text-5xl md:text-7xl font-bold mb-4">Wear The Future</h2>
+    <p class="text-gray-400 mb-6">Premium Streetwear Brand</p>
+    <a href="#shop" class="bg-yellow-400 text-black px-8 py-3 rounded-2xl font-semibold hover:scale-110 transition">Shop Now</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="text-center py-16 px-6 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-4">About Nexaro</h3>
+    <p class="text-gray-400 max-w-xl mx-auto">
+      Nexaro ek premium streetwear brand hai jo modern fashion aur comfort ko combine karta hai. 
+      Hum high-quality T-shirts, hoodies aur trendy outfits provide karte hain.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="shop" class="p-6 md:p-10">
+    <h3 class="text-3xl font-bold mb-6 text-center">Trending Products</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-gray-900 p-4 rounded-2xl shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/300" class="rounded-xl mb-3" />
+        <h4 class="text-xl">Black T-Shirt</h4>
+        <p class="text-yellow-400">₹499</p>
+        <button onclick="order('Black T-Shirt')" class="mt-3 w-full bg-green-500 py-2 rounded-xl">Order on WhatsApp</button>
+      </div>
+
+      <div class="bg-gray-900 p-4 rounded-2xl shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/300" class="rounded-xl mb-3" />
+        <h4 class="text-xl">Oversized Tee</h4>
+        <p class="text-yellow-400">₹699</p>
+        <button onclick="order('Oversized Tee')" class="mt-3 w-full bg-green-500 py-2 rounded-xl">Order on WhatsApp</button>
+      </div>
+
+      <div class="bg-gray-900 p-4 rounded-2xl shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/300" class="rounded-xl mb-3" />
+        <h4 class="text-xl">Hoodie</h4>
+        <p class="text-yellow-400">₹999</p>
+        <button onclick="order('Hoodie')" class="mt-3 w-full bg-green-500 py-2 rounded-xl">Order on WhatsApp</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center py-16 px-4 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+    <p class="text-gray-400">Order directly on WhatsApp</p>
+    <a href="https://wa.me/919214238685" class="bg-green-500 px-6 py-3 rounded-xl inline-block mt-4 hover:scale-105 transition">Chat Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 border-t border-gray-800 text-gray-400">
+    <p>© 2026 Nexaro. All Rights Reserved.</p>
+    <p class="text-sm mt-2">Follow us on Instagram @nexaro</p>
+  </footer>
+
+  <!-- WhatsApp Script -->
+  <script>
+    function order(product) {
+      const phone = "919214238685"; // 👉 apna number daalo
+      const message = `I want to order ${product} from Nexaro`;
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
